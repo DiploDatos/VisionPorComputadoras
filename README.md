@@ -77,8 +77,21 @@ The tensorflow version that you should install depends on you Cuda and Cudnn ver
 
 -------------------------------------------
 
-## Run
+## Run Notebooks
 
-```
-$ jupyter notebook
-```
+### Local machine:
+
+`$ jupyter notebook`
+
+### Working on a remote server:
+
+1. Launch notebook on the server:
+
+`$ jupyter notebook --port=<port>  --no-browser --ip=0.0.0.0`
+
+2. Make a tunnel on your local machine:
+
+`$ ssh -f remote_user@remote_host -L <port>:localhost:<port> -N`
+
+3. Then go to: http://localhost:<port>/?token=<token>
+
