@@ -68,12 +68,12 @@ Maybe you should add the following lines to you `~/.bashrc`:
 
 ```
 # Cuda and cudnn
-export PATH=$PATH:/opt/cuda/8.0/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cudnn/v6:/opt/cuda/8.0/lib64
+export PATH=$PATH:/opt/cuda/9.0/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cudnn/v7.0:/opt/cuda/9.0/lib64
 ```
 
 The tensorflow version that you should install depends on you Cuda and Cudnn version. For example for Cuda 8.0 with Cudnn 6.0 we should install the following version:
-`$ pip install tensorflow-gpu==1.4.1`
+`$ pip install tensorflow-gpu==1.5`
 
 -------------------------------------------
 
