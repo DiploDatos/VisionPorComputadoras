@@ -10,11 +10,11 @@
 
 - Python 3+
 - [pip](https://pip.pypa.io/en/stable/) >= 9.0
-- virtualenv
-- virtualenvwrapper
+- virtualenv (optional)
+- virtualenvwrapper (optional)
 - tensorflow
 
-### Virtualenv and Virtualenvwrapper
+### Virtualenv and Virtualenvwrapper (optional)
 
 `$ pip3 install --user virtualenv virtualenvwrapper`
 
@@ -72,7 +72,11 @@ export PATH=$PATH:/opt/cuda/9.0/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cudnn/v7.0:/opt/cuda/9.0/lib64
 ```
 
-The tensorflow version that you should install depends on you Cuda and Cudnn version. For example for Cuda 8.0 with Cudnn 6.0 we should install the following version:
+Update changes:
+
+`$ source ~/.bashrc`
+
+The tensorflow version that you should install depends on you Cuda and Cudnn version. For example for Cuda 9.0 with Cudnn 7.0 we should install the following version:
 `$ pip install tensorflow-gpu==1.5`
 
 -------------------------------------------
@@ -93,5 +97,5 @@ The tensorflow version that you should install depends on you Cuda and Cudnn ver
 
 `$ ssh -f remote_user@remote_host -L <port>:localhost:<port> -N`
 
-3. Then go to: http://localhost:<port>/?token=<token>
+3. Then go to: http://localhost:<port>/?token=\<token\>
 
